@@ -29,7 +29,7 @@ Since the application is deployed and accessible online, there's no need to inst
 ## Example
 
 Here's a screenshot of the movie recommendation system interface:
-![Movie Recommendation System](/screenshots/recommendation_system.png)
+![Movie Recommendation System](/recommendation_system.jpeg)
 
 ## Credits
 
