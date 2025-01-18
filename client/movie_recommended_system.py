@@ -15,9 +15,9 @@ def fetch_poster(movie_id):
     full_path = "https://image.tmdb.org/t/p/w500/" + poster_path
     return full_path
 st.title("Movie Recommondation System")
-movies_dict=pickle.load(open("movie_dict.pkl","rb"))
+movies_dict=pickle.load(open("client/movie_dict.pkl","rb"))
 movies=pd.DataFrame(movies_dict)
-similarity=pickle.load(open('similarity.pkl','rb'))
+similarity=pickle.load(open('client/similarity.pkl','rb'))
 def recommend(movie):
     index = movies[movies['original_title'] == movie].index[0]
     distances = sorted(list(enumerate(similarity[index])), reverse=True, key=lambda x: x[1])
